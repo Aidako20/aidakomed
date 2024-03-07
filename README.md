@@ -148,7 +148,7 @@ And run Tomcat:
 . Clone the aidakomed repository and compile:
 
 ```bash
- sudo git clone https://github.com/AidakoMed/aidakomed.git
+ sudo git clone https://github.com/Aidako20/aidakomed.git
  cd aidakomed
  sudo mvn clean package
 ```
