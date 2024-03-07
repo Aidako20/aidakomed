@@ -11,16 +11,20 @@ Check Java version:
 ```
 2. The Tomcat or Jetty servlet container. We will install Tomcat-9. Go to the folder opt and download the archive Tomcat-9:
 ```bash
+ sudo useradd -r -m -U -d /opt/tomcat -s /bin/false tomcat
+```
+   
+```bash
  cd /opt
- sudo wget http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.tar.gz
+ sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.tar.gz
 ```
 We unpack:
 ```bash
- sudo tar -zxf apache-tomcat-9.0.12.tar.gz
+ sudo tar -zxf apache-tomcat-9.0.86.tar.gz
 ```
 For convenience, change the name of the unpacked folder to tomcat using the following command:
 ```bash
- sudo mv apache-tomcat-9.0.12 tomcat
+ sudo mv apache-tomcat-9.0.86 tomcat
 ```
 Now we need to add Tomcat to the services so that it can be easily started and stopped.
 Create a new file ##tomcat.service
