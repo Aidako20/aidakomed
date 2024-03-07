@@ -178,7 +178,7 @@ mysql>
 ```
 
 ```bash
-mysql> exit
+  exit
 ```
 ```bash
 sudo mysql_secure_installation
