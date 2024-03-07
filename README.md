@@ -3,7 +3,7 @@
 1. First you need to install JAVA on the server.
 ```bash
  sudo apt-get update
- sudo apt-get install defaul-jdk
+ sudo apt-get install default-jdk
 ```
 Check Java version:
 ```bash
