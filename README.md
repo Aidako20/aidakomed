@@ -168,6 +168,19 @@ You can also download the war file via the web interface of tomcat:
 ```bash
  sudo apt-get install mysql-server mysql-client
 ```
+```bash
+ sudo mysql
+```
+```bash
+ mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
+```bash
+mysql> exit
+```
+```bash
+sudo mysql_secure_installation
+```
+
 In the query field, create a password for the root user and remember.
 
 Then in the browser at http://localhost:8080/openmrs the installer will prompt you for the next steps.
