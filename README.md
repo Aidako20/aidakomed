@@ -15,16 +15,21 @@ Check Java version:
 ```
    
 ```bash
- cd /opt
- sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.tar.gz
+wget -c https://downloads.apache.org/tomcat/tomcat-9/v9.0.34/bin/apache-tomcat-9.0.34.tar.gz
 ```
 We unpack:
 ```bash
- sudo tar -zxf apache-tomcat-9.0.86.tar.gz
+sudo tar xf apache-tomcat-9.0.34.tar.gz -C /opt/tomcat
 ```
 For convenience, change the name of the unpacked folder to tomcat using the following command:
 ```bash
- sudo mv apache-tomcat-9.0.86 tomcat
+sudo ln -s /opt/tomcat/apache-tomcat-9.0.34 /opt/tomcat/updated
+```
+```bash
+sudo chown -R tomcat: /opt/tomcat/*
+```
+```bash
+sudo sh -c 'chmod +x /opt/tomcat/updated/bin/*.sh'
 ```
 Now we need to add Tomcat to the services so that it can be easily started and stopped.
 Create a new file ##tomcat.service
