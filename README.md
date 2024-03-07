@@ -39,20 +39,27 @@ Create a new file ##tomcat.service
 Add the following lines to it:
 ```bash
 [Unit]
-Description=Tomcat9
+Description=Apache Tomcat Web Application Container
 After=network.target
 
 [Service]
 Type=forking
 
-Environment=CATALINA_PID=/opt/tomcat/tomcat9.pid
-Environment=JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
-Environment=CATALINA_HOME=/opt/tomcat
-Environment=CATALINA_BASE=/opt/tomcat
-Environment="CATALINA_OPTS=-Xms512m -Xmx512m"
-Environment="JAVA_OPTS=-Dfile.encoding=UTF-8 -Dnet.sf.ehcache.skipUpdateCheck=true -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:+UseParNewGC"
-ExecStart=/opt/tomcat/bin/startup.sh
-ExecStop=/opt/tomcat/bin/shutdown.sh
+Environment="JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64"
+Environment="CATALINA_PID=/opt/tomcat/updated/temp/tomcat.pid"
+Environment="CATALINA_HOME=/opt/tomcat/updated/"
+Environment="CATALINA_BASE=/opt/tomcat/updated/"
+Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
+Environment="JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom"
+
+ExecStart=/opt/tomcat/updated/bin/startup.sh
+ExecStop=/opt/tomcat/updated/bin/shutdown.sh
+
+User=tomcat
+Group=tomcat
+UMask=0007
+RestartSec=10
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
