@@ -172,7 +172,10 @@ You can also download the war file via the web interface of tomcat:
  sudo mysql
 ```
 ```bash
- mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+mysql>
+```bash
+  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```
 ```
 ```bash
 mysql> exit
