@@ -15,7 +15,7 @@ Check Java version:
 ```
    
 ```bash
-wget -c https://downloads.apache.org/tomcat/tomcat-9/v9.0.34/bin/apache-tomcat-9.0.34.tar.gz
+wget -c https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.86.tar.gz
 ```
 We unpack:
 ```bash
