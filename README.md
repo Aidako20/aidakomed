@@ -19,7 +19,7 @@ wget -c https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.86/bin/apache-tomcat-9.0.8
 ```
 We unpack:
 ```bash
-sudo tar xf apache-tomcat-9.0.34.tar.gz -C /opt/tomcat
+sudo tar xf apache-tomcat-9.0.86.tar.gz -C /opt/tomcat
 ```
 For convenience, change the name of the unpacked folder to tomcat using the following command:
 ```bash
