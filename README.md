@@ -110,7 +110,7 @@ To connect to the service from outside the comment lines in the files /opt/tomca
 . . . . . .
 ```
 ```bash
- sudo nano /opt/tomcat/webapps/host-manager/META-INF/context.xml
+ nano /opt/tomcat/updated/webapps/host-manager/META-INF/context.xml
 ```
 ```bash
 . . . . . .
