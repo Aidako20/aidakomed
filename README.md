@@ -84,7 +84,7 @@ Active: active (running)...........
 By default, Tomcat runs on port 8080. If desired, you can change it. Next, create users.
 Open the file /opt/tomcat/conf/tomcat-users.xml:
 ```bash
- sudo nano /opt/tomcat/conf/tomcat-users.xml
+  nano /opt/tomcat/apache-tomcat-9.0.86/conf/tomcat-users.xml
 ```
 Create a new user named admin and the role of admin, manager, and manager-gui. This file must be protected, so you will need to open it as root, and add the entry like this:
 ```bash
