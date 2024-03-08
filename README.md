@@ -23,7 +23,7 @@ sudo tar xf apache-tomcat-9.0.86.tar.gz -C /opt/tomcat
 ```
 For convenience, change the name of the unpacked folder to tomcat using the following command:
 ```bash
-sudo ln -s /opt/tomcat/apache-tomcat-9.0.34 /opt/tomcat/updated
+sudo ln -s /opt/tomcat/apache-tomcat-9.0.86 /opt/tomcat/updated
 ```
 ```bash
 sudo chown -R tomcat: /opt/tomcat/*
