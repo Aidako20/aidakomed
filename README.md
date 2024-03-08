@@ -189,8 +189,31 @@ sudo mysql_secure_installation
 
 In the query field, create a password for the root user and remember.
 
+For PostgreSQL:
+```bash
+  sudo apt update
+  sudo apt install postgresql postgresql-contrib
+```
+Type the following command to change the default password for the Postgres user:
+```bash
+  sudo -i -u postgres
+  psql
+```
+```bash
+  ALTER USER postgres WITH PASSWORD 'new_password';
+  \q
+  exit
+```
 Then in the browser at http://localhost:8080/openmrs the installer will prompt you for the next steps.
 
 Starting the installer:
 
-
+For PostgreSQL webinterface:
+Set the database connection string as: 
+```bash
+jdbc:postgresql://localhost:5432/@DBNAME@?charSet=UNICODE
+```
+Set the database driver as: 
+```bash
+org.postgresql.Driver
+```
