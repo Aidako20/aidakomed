@@ -159,7 +159,7 @@ The compiled openmrs.war file will be located in the /aidakomed/webapp/target/fo
 
 ```bash
  cd /aidakomed/webapp/target
- sudo cp openmrs.war /opt/tomcat/webapps/
+ sudo cp openmrs.war /opt/tomcat/updated/webapps
  service tomcat restart
 ```
 You can also download the war file via the web interface of tomcat:
