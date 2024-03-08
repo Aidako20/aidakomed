@@ -98,7 +98,7 @@ Save and close.
 
 To connect to the service from outside the comment lines in the files /opt/tomcat/webapps/manager/META-INF/context.xml and /opt/tomcat/webapps/host-manager/META-INF/context.xml:
 ```bash
- sudo nano /opt/tomcat/webapps/manager/META-INF/context.xml
+ nano /opt/tomcat/updated/webapps/manager/META-INF/context.xml
 ```
 ```bash
 . . . . . . 
