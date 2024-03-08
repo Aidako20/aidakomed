@@ -158,7 +158,7 @@ And run Tomcat:
 The compiled openmrs.war file will be located in the /aidakomed/webapp/target/folder and copy it to the /opt/tomcat/webapps/ folder and restart Tomcat:
 
 ```bash
- cd /aidakomed/webapp/target
+ cd webapp/target
  sudo cp openmrs.war /opt/tomcat/updated/webapps
  service tomcat restart
 ```
