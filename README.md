@@ -123,6 +123,9 @@ To connect to the service from outside the comment lines in the files /opt/tomca
 ```
 To increase the amount of uploaded files, edit the file /opt/tomcat/webapps/manager/WEB-INF/web.xml:
 ```bash
+ nano /opt/tomcat/updated/webapps/manager/WEB-INF/web.xml
+```
+```bash
 . . . . .
 <multipart-config>
       <!-- 80MB max -->
